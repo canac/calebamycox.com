@@ -3,3 +3,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* iOS Safari zooms in background images with background-attachment: fixed, so remove the fixed background-attachment */
+@supports (-webkit-touch-callout: inherit) {
+  .bg-fixed {
+    background-attachment: scroll;
+  }
+}
