@@ -16,20 +16,18 @@
     <link rel="icon" href="favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="./input.css" rel="stylesheet" />
+    <link href="./styles.css" rel="stylesheet" />
     <title>Caleb & Amy Cox | Cru</title>
   </head>
-  <body class="font-source-sans-pro">
-    <div
-      class="h-[100vh] bg-header bg-cover bg-fixed bg-top pt-[calc(max(100vw,100vh*1.5)*0.30)] text-center text-white"
-    >
-      <h1 class="text-[2em] font-bold md:text-[3em]">Caleb & Amy Cox</h1>
+  <body>
+    <header>
+      <h1>Caleb & Amy Cox</h1>
       <p>Bringing the gospel to high school students with Cru in Dallas, Texas</p>
-    </div>
-    <div class="flex flex-col bg-gray-dark p-8 md:flex-row md:px-[calc(max(8rem,100vw-960px)/2)]">
+    </header>
+    <div class="the-need dark">
       <div>
-        <h2 class="pb-4 text-center text-[2em] font-bold text-yellow md:text-left md:text-[3em]">The Need</h2>
-        <p class="text-white">
+        <h2>The Need</h2>
+        <p>
           Teenagers today experience challenges unlike any other age group. Peer pressure, questions about their sexual
           orientation and gender identity, difficult home lives, anxiety, depression, and substance abuse are just a few
           of the struggles they face. They are searching for meaning and direction in the midst of an increasingly
@@ -45,111 +43,90 @@
         height="898"
       />
     </div>
-    <div class="p-8 md:px-[calc(max(8rem,100vw-960px)/2)]">
-      <h2 class="pb-4 text-center text-[2em] font-bold md:text-[3em]">About Us</h2>
+    <div class="about-us">
+      <h2>About Us</h2>
       <p>
         Caleb and Amy have been on staff with Cru (formerly Campus Crusade for Christ) since 2016 and have served in
         Dallas since 2020. We are both passionate about bringing the good news of the hope of Jesus to high school
         students who wouldn&rsquo;t otherwise hear about him.
       </p>
     </div>
-    <div class="flex flex-col bg-gray-dark p-8 md:px-[calc(max(8rem,100vw-960px)/2)]">
-      <div class="flex flex-col md:flex-row">
-        <div class="order-0 py-6 md:order-1">
-          <h2 class="pb-4 text-center text-[2em] font-bold text-yellow md:text-left md:text-[3em]">Win</h2>
-          <p class="flex-1 text-white">
+    <div class="win-build-send dark">
+      <div class="columns">
+        <div class="text">
+          <h2>Win</h2>
+          <p>
             We win students to Christ by going to where they are and boldly presenting the gospel. This happens through
             outreaches to sports teams and other groups of students as well as small group evangelism.
           </p>
         </div>
-        <img
-          class="h-full w-3/4 self-center sm:w-2/3 md:w-1/2 md:self-auto md:p-8 md:pl-0"
-          src="/img/win.jpg"
-          alt="Evangelizing students"
-          width="1024"
-          height="768"
-        />
+        <img src="/img/win.jpg" alt="Evangelizing students" width="1024" height="768" />
       </div>
-      <div class="flex flex-col md:flex-row">
-        <div class="order-0 py-6 md:order-1">
-          <h2 class="pb-4 text-center text-[2em] font-bold text-yellow md:text-left md:text-[3em]">Build</h2>
-          <p class="flex-1 text-white">
+      <div class="columns">
+        <div class="text">
+          <h2>Build</h2>
+          <p>
             We build students up in their faith through weekly meetings and small group discipleship to help them know,
             love, and obey Jesus more.
           </p>
         </div>
-        <img
-          class="h-full w-3/4 self-center sm:w-2/3 md:w-1/2 md:self-auto md:p-8 md:pl-0"
-          src="/img/build.jpg"
-          alt="Discipling students"
-          width="1024"
-          height="768"
-        />
+        <img src="/img/build.jpg" alt="Discipling students" width="1024" height="768" />
       </div>
-      <div class="flex flex-col md:flex-row">
-        <div class="order-0 py-6 md:order-1">
-          <h2 class="pb-4 text-center text-[2em] font-bold text-yellow md:text-left md:text-[3em]">Send</h2>
-          <p class="flex-1 text-white">
+      <div class="columns">
+        <div class="text">
+          <h2>Send</h2>
+          <p>
             We send students out to reach their schools and the world for Christ. That happens through equipping and
             empowering them to share Christ with their classmates and teammates and providing opportunities for them to
             take the gospel to the nations via mission trips.
           </p>
         </div>
-        <img
-          class="h-full w-3/4 self-center sm:w-2/3 md:w-1/2 md:self-auto md:p-8 md:pl-0"
-          src="/img/send.jpg"
-          alt="Students reaching their peers"
-          width="1024"
-          height="768"
-        />
+        <img src="/img/send.jpg" alt="Students reaching their peers" width="1024" height="768" />
       </div>
     </div>
-    <div class="p-8 md:px-[calc(max(8rem,100vw-960px)/2)]">
-      <h2 class="pb-8 text-center text-[2em] font-bold md:text-[3em]">How Can I Help?</h2>
-      <div class="flex flex-col gap-12 md:flex-row">
-        <div class="flex flex-1 flex-col">
-          <h2 class="pb-4 text-center text-xl font-bold">Pray</h2>
-          <p class="flex-1 pb-8">
+    <div class="help">
+      <h2>How Can I Help?</h2>
+      <div class="items columns">
+        <div class="item">
+          <h3>Pray</h3>
+          <p>
             Join our email prayer letter list to get a monthly story of what God is doing in students&rsquo; lives and a
             few prayer requests.
           </p>
           <a
-            class="w-32 self-center rounded bg-yellow p-1 text-center"
+            class="button"
             href="https://docs.google.com/forms/d/e/1FAIpQLSez2SVd3hk6RHCuofTdJtp_8WhNRUzij9xzP2PYATe5iBnw1g/viewform"
             target="_blank"
-            >Sign Up</a
+          >
+            Sign Up</a
           >
         </div>
-        <div class="flex flex-1 flex-col">
-          <h2 class="pb-4 text-center text-xl font-bold">Give</h2>
-          <p class="flex-1 pb-8">
+        <div class="item">
+          <h3>Give</h3>
+          <p>
             We are support-based missionaries and depend on the generous donations of individuals and churches to
             continue our ministry. You can give a special gift or become a monthly financial partner online.
           </p>
-          <a class="w-32 self-center rounded bg-yellow p-1 text-center" href="https://give.cru.org/0864190"
-            >Give a Gift</a
-          >
+          <a class="button" href="https://give.cru.org/0864190">Give a Gift</a>
         </div>
-        <div class="flex flex-1 flex-col">
-          <h2 class="pb-4 text-center text-xl font-bold">Volunteer</h2>
-          <p class="flex-1 pb-8">
+        <div class="item">
+          <h3>Volunteer</h3>
+          <p>
             Do you live in DFW and have a heart to reach high school students for Christ? Please reach out, and
             let&rsquo;s talk about ways you can get involved, like speaking at our weekly meeting or leading a small
             group Bible study!
           </p>
-          <a class="w-32 self-center rounded bg-yellow p-1 text-center" href="mailto:caleb.cox@cru.org,amy.cox@cru.org"
-            >Contact Us</a
-          >
+          <a class="button" href="mailto:caleb.cox@cru.org,amy.cox@cru.org">Contact Us</a>
         </div>
       </div>
     </div>
-    <footer class="bg-gray-dark p-8 md:px-[calc(max(8rem,100vw-960px)/2)]">
+    <footer class="dark">
       <h2 class="pb-4 text-lg font-bold text-yellow">Contact Us</h2>
-      <p class="text-white">
+      <p>
         Have other questions? Get in touch with us at
-        <a class="text-yellow" href="mailto:caleb.cox@cru.org">caleb.cox@cru.org</a>
+        <a href="mailto:caleb.cox@cru.org">caleb.cox@cru.org</a>
         or
-        <a class="text-yellow" href="mailto:amy.cox@cru.org">amy.cox@cru.org</a>.
+        <a href="mailto:amy.cox@cru.org">amy.cox@cru.org</a>.
       </p>
     </footer>
   </body>
