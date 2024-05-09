@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
+
+/* Resets */
+html {
+  line-height: 1.5;
+}
+
+body {
+  line-height: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p,
+body {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/* Theme */
+body {
+  --cru-dark-gray: #383f43;
+  --cru-yellow: #ffcf07;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+h1,
+h2 {
+  font-size: 2em;
+  font-weight: bold;
+
+  @media (width >= 768px) {
+    font-size: 3em;
+  }
+}
+
+h2 {
+  padding-bottom: 1rem;
+}
+
+.dark {
+  background-color: var(--cru-dark-gray);
+
+  h2 {
+    color: var(--cru-yellow);
+  }
+
+  p {
+    color: white;
+  }
+}
+
+.columns {
+  display: flex;
+  flex-direction: column;
+  @media (width >= 768px) {
+    flex-direction: row;
+  }
+}
+
+.button {
+  width: 8rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  background-color: var(--cru-yellow);
+  text-align: center;
+}
+
+body > * {
+  padding: 2rem;
+  @media (width >= 768px) {
+    padding: 4rem calc(max(8rem, 100vw - 960px) / 2);
+  }
+}
+
+header {
+  height: 100vh;
+  padding-top: calc(clamp(45vh, 30vw, 100vh - 8rem));
+  background: fixed top/cover url("/img/header.jpg");
+  color: white;
+  text-align: center;
+
+  /* iOS Safari zooms in background images with background-attachment: fixed, so remove the fixed background-attachment */
+  @supports (-webkit-touch-callout: inherit) {
+    background-attachment: scroll;
+  }
+}
+
+.the-need {
+  display: flex;
+  flex-direction: column;
+  @media (width >= 768px) {
+    flex-direction: row;
+  }
+
+  h2 {
+    text-align: center;
+    @media (width >= 768px) {
+      text-align: left;
+    }
+  }
+
+  img {
+    width: 75%;
+    height: 100%;
+    align-self: center;
+    padding-top: 2rem;
+
+    @media (width >= 640px) {
+      width: 66.666667%;
+    }
+    @media (width >= 768px) {
+      width: 33.333333%;
+      align-self: auto;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      padding-left: 2rem;
+    }
+  }
+}
+
+.about-us h2 {
+  text-align: center;
+}
+
+.win-build-send {
+  display: flex;
+  flex-direction: column;
+
+  .text {
+    padding-block: 1.5rem;
+
+    @media (width >= 768px) {
+      order: 1;
+    }
+  }
+
+  p {
+    flex: 1;
+  }
+
+  h2 {
+    text-align: center;
+    @media (width >= 768px) {
+      text-align: left;
+    }
+  }
+
+  img {
+    width: 75%;
+    height: 100%;
+    align-self: center;
+
+    @media (width >= 640px) {
+      width: 66.666667%;
+    }
+
+    @media (width >= 768px) {
+      width: 50%;
+      align-self: auto;
+      padding: 2rem;
+      padding-left: 0px;
+    }
+  }
+}
+
+.help {
+  h2 {
+    padding-bottom: 2rem;
+    text-align: center;
+  }
+
+  h3 {
+    padding-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 1.75rem;
+    text-align: center;
+  }
+
+  .items {
+    gap: 3rem;
+
+    .item {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+
+      p {
+        flex: 1;
+        padding-bottom: 2rem;
+      }
+
+      a {
+        align-self: center;
+      }
+    }
+  }
+}
+
+footer {
+  h2 {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  a {
+    color: var(--cru-yellow);
+  }
+}
