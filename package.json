@@ -22,7 +22,7 @@
     "prettier:fix": "prettier --write ."
   },
   "devDependencies": {
-    "parcel": "^2.12.0",
+    "parcel": "^2.16.4",
     "prettier": "^3.2.5",
     "stylelint": "^16.5.0",
     "stylelint-config-idiomatic-order": "^10.0.0"
